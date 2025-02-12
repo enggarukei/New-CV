@@ -40,9 +40,17 @@
             font-size: 1.2rem;
             color: #8b949e;
         }
-        .bio {
+        .bio, .summary, .experience, .education, .certifications {
             margin-top: 15px;
             font-size: 1rem;
+            text-align: left;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: 20px;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 5px;
         }
         .contact {
             margin-top: 20px;
@@ -64,6 +72,31 @@
         <div class="name">John Doe</div>
         <div class="job">Software Engineer | Open Source Enthusiast</div>
         <p class="bio">Passionate about web development, open source projects, and software engineering. Always learning and building cool stuff.</p>
+        
+        <div class="summary">
+            <div class="section-title">Summary</div>
+            <p>Experienced software engineer with a strong background in full-stack development, cloud computing, and DevOps.</p>
+        </div>
+
+        <div class="experience">
+            <div class="section-title">Work Experience</div>
+            <p><strong>Software Engineer</strong> - ABC Tech (2020 - Present)</p>
+            <p>Developed and maintained scalable web applications, collaborated with cross-functional teams, and implemented DevOps practices.</p>
+            <p><strong>Web Developer</strong> - XYZ Solutions (2018 - 2020)</p>
+            <p>Designed and built responsive websites, optimized performance, and integrated third-party APIs.</p>
+        </div>
+
+        <div class="education">
+            <div class="section-title">Education</div>
+            <p><strong>Bachelor's Degree in Computer Science</strong> - University of Tech (2014 - 2018)</p>
+        </div>
+
+        <div class="certifications">
+            <div class="section-title">Certifications</div>
+            <p>Certified Kubernetes Administrator (CKA)</p>
+            <p>AWS Certified Solutions Architect</p>
+        </div>
+
         <div class="contact">
             <a href="mailto:johndoe@example.com"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://github.com/johndoe" target="_blank"><i class="fab fa-github"></i> GitHub</a>
