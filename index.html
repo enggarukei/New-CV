@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Generator</title>
+    <title>CV | GitHub Style</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
@@ -16,69 +16,59 @@
         }
         header {
             background-color: #161b22;
-            padding: 15px;
-            font-size: 24px;
+            padding: 20px;
+            font-size: 28px;
             font-weight: bold;
         }
         .container {
-            width: 60%;
+            width: 50%;
             margin: auto;
             padding: 20px;
         }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #30363d;
-            background-color: #161b22;
-            color: #c9d1d9;
-            border-radius: 5px;
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #238636;
         }
-        button {
-            background-color: #238636;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
+        .name {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 10px;
         }
-        .cv-preview {
+        .job {
+            font-size: 1.2rem;
+            color: #8b949e;
+        }
+        .bio {
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+        .contact {
             margin-top: 20px;
-            padding: 20px;
-            background-color: #161b22;
-            border-radius: 8px;
+        }
+        .contact a {
+            color: #58a6ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>CV Generator</header>
+    <header>My GitHub Style CV</header>
     <div class="container">
-        <h2>Input Your Details</h2>
-        <input type="text" id="name" placeholder="Full Name">
-        <input type="text" id="job" placeholder="Job Title">
-        <textarea id="summary" placeholder="Brief Summary"></textarea>
-        <input type="text" id="email" placeholder="Email">
-        <input type="text" id="phone" placeholder="Phone Number">
-        <button onclick="generateCV()">Generate CV</button>
-        <div class="cv-preview" id="cv-preview"></div>
+        <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profile Picture" class="profile-pic">
+        <div class="name">John Doe</div>
+        <div class="job">Software Engineer | Open Source Enthusiast</div>
+        <p class="bio">Passionate about web development, open source projects, and software engineering. Always learning and building cool stuff.</p>
+        <div class="contact">
+            <a href="mailto:johndoe@example.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://github.com/johndoe" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/johndoe" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
     </div>
-    <script>
-        function generateCV() {
-            let name = document.getElementById('name').value;
-            let job = document.getElementById('job').value;
-            let summary = document.getElementById('summary').value;
-            let email = document.getElementById('email').value;
-            let phone = document.getElementById('phone').value;
-            
-            let preview = `<h2>${name}</h2>
-                           <h4>${job}</h4>
-                           <p>${summary}</p>
-                           <p>Email: ${email}</p>
-                           <p>Phone: ${phone}</p>`;
-            
-            document.getElementById('cv-preview').innerHTML = preview;
-        }
-    </script>
 </body>
 </html>
